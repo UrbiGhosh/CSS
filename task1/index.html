@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layout Task</title>
+  <style>
+    body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    font: 1em / 1.2 Arial, Helvetica, sans-serif;
+  }
+  p.ex1 {
+
+    font-size: 70%;
+}
+
+  img {
+      max-width: 100%;
+      display: block;
+  }
+  span.b {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+}
+  
+  .logo {
+    font-size: 400%;
+    padding: 50px 1.5em;
+    margin: 0 0px;
+    max-width: 980px;
+  }
+  
+  .grid-container {
+  display: grid;
+  grid: 150px / 65% 25%;
+  grid-gap: 10px;
+
+  padding-left: 100px;
+}
+
+.grid-container > div {
+
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.smallgrid-container {
+  display: grid;
+  grid: auto / auto auto;
+  grid-gap: 1px;
+
+}
+
+.smallgrid-container > div {
+  text-align: center;
+  padding: 0px 0;
+  font-size: 15px;
+}
+  li {
+  display: inline;
+  padding: 3%;
+  }
+  #navbar {
+    
+  overflow: hidden;
+  background-color: black;
+}
+#navbar ul {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: -2%;
+margin-left: -50px;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.content {
+  padding: 0px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 0px;
+}
+
+ 
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .feature {
+      width: 200px;
+  }
+  @media screen and (max-width: 780px) {
+  
+  .grid-container {
+	display:block;
+  }
+  #navbar ul {
+    flex-direction: column;
+  }}
+  </style>
+</head>
+
+<body>
+
+  <div class="logo">
+  My exciting website!
+  </div>
+
+  <div id="navbar">
+    <ul>
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">Blog</a>
+      </li>
+      <li>
+        <a href="">About us</a>
+      </li>
+      <li>
+        <a href="">Our history</a>
+      </li>
+      <li>
+        <a href="">Contacts</a>
+      </li>
+    </ul>
+  </div>
+ 
+
+
+<div class="grid-container">
+  <div class="item1"><article>
+      <h1>
+        An Exciting Blog Post
+      </h1>
+      
+      <p class="ex1"><span class="b"><img src="images/balloon-sq6.jpg" alt="placeholder" class="feature"></span>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon
+        azuki bean garlic.</p>
+
+      <p class="ex1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens
+        dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+
+      <p class="ex1">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon
+        napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
+        Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram
+        corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.
+        Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+
+      <p class="ex1">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie
+        turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki
+        bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+
+      <p class="ex1">Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle
+        seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+
+        <p class="ex1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens
+          dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+  
+        <p class="ex1">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon
+          napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
+          Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram
+          corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.
+          Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+  
+        <p class="ex1">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie
+          turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki
+          bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+  
+        <p class="ex1">Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle
+          seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+          <p class="ex1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens
+            dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    
+          <p class="ex1">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon
+            napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
+            Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram
+            corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.
+            Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+    
+          <p class="ex1">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie
+            turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki
+            bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+    
+          <p class="ex1">Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle
+            seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+    </article>
+
+  </div>
+  <div class="item2"><h2>
+        Photography
+      </h2>
+      <div class="smallgrid-container">
+  	  <div class="item1"><img src="images/balloon-sq1.jpg" alt="placeholder"></div>
+      <div class="item1"><img src="images/balloon-sq2.jpg" alt="placeholder"></div>
+      <div class="item1"><img src="images/balloon-sq3.jpg" alt="placeholder"></div>
+      <div class="item1"><img src="images/balloon-sq4.jpg" alt="placeholder"></div>
+      <div class="item1"><img src="images/balloon-sq5.jpg" alt="placeholder"></div>
+      </div>
+      
+  </div>
+
+
+</div>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</body>
+
+</html>
