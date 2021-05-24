@@ -1,0 +1,499 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+/*...............................................................................................*/
+/*General*/
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+html,
+body,
+div,
+span,
+h1,
+h2,
+p,
+a,
+em,
+img,
+q,
+s,
+small,
+strong,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+li,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+Footer,
+header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  background-color: #1e252d;
+}
+
+body {
+  background-color: #1e252d;
+  font-size: 16px;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 300;
+  line-height: 2.375;
+  color: #212931;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  display: block;
+}
+
+a {
+  border-bottom-color: rgba(33, 41, 49, 0.5);
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-decoration: none;
+  color: #212931;
+  border-bottom: dotted 1px;
+}
+
+table {
+  margin: 0 0 2rem 0;
+  width: 100%;
+}
+header > .date {
+  display: block;
+  font-size: 0.8rem;
+  height: 1;
+  margin: 0 0 1rem 0;
+  position: relative;
+}
+header.major > .date:before,
+header.major > .date:after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  display: block;
+  width: calc(50% - 6rem);
+  border-top: solid 2px;
+  border-top-color: #eeeeee;
+}
+header.major > .date:before {
+  left: 0;
+}
+header.major > .date:after {
+  right: 0;
+}
+
+a:hover {
+  color: #18bfef;
+}
+.bluebtn:hover {
+  color: #18bfef !important;
+  border-color: #18bfef;
+  box-shadow: inset 0 0 0 2px #18bfef;
+}
+.bluebord:hover {
+  border-color: #18bfef;
+}
+#intro h1 {
+  font-size: 5rem !important;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0 0 2rem 0;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  cursor: default;
+  text-align: center;
+}
+
+#intro p {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-top: -0.25rem;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  color: white;
+  cursor: default;
+}
+#intro a {
+  color: white;
+}
+
+#intro a:hover {
+  border-bottom-color: transparent;
+  color: #18bfef !important;
+}
+
+.massively {
+  border-style: solid;
+  border-color: white;
+  border-width: 5px !important;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 1rem 1.75rem;
+  text-transform: uppercase;
+  pointer-events: auto;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
+
+#hintro {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  height: 14rem;
+  padding-bottom: 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pointer-events: none;
+  user-select: none;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+#hintro a {
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+input,
+select,
+textarea {
+  font-size: 1rem;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 300;
+  background-attachment: fixed !important;
+  line-height: 2.375;
+}
+.parallax {
+  background-image: url("https://html5up.net/uploads/demos/massively/images/bg.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+} /*not working*/
+h1,
+h2 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.075em;
+  margin: 0 0 1rem 0;
+}
+h1 a,
+h2 a {
+  border-bottom: 0;
+  color: inherit;
+  text-decoration: none;
+}
+div.a {
+  text-transform: uppercase;
+}
+div.b {
+  text-align: justify;
+}
+h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 0 0 2rem 0;
+  color: #212931;
+}
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  margin: 0 0 1.5rem 0;
+  color: #212931;
+}
+/*...............................................................................................*/
+/*Main*/
+#main {
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 72rem;
+}
+#main > .post header.major > h1,
+#main > .post header.major h2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 0 0 2rem 0;
+}
+#main > .post.featured {
+  text-align: center;
+}
+#main > * {
+  padding: 4rem 4rem 2rem 4rem;
+  border-top: solid 2px #eeeeee;
+}
+#main > .posts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+#main > .posts > * {
+  width: 50%;
+  padding: 4rem;
+}
+#main > .posts > article {
+  border-color: #eeeeee;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-style: solid;
+  text-align: center;
+}
+#main > Footer {
+  text-align: center;
+}
+/*...............................................................................................*/
+/*Pics*/
+.image main{
+  border-bottom: none !important;
+}
+.image.fit img {
+  width: 100%;
+}
+/*...............................................................................................*/
+/*Buttons*/
+.button {
+  box-shadow: inset 0 0 0 2px #212931;
+  color: #212931 !important;
+  display: inline-block;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+.button.small {
+  font-size: 0.7rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1.5rem;
+}
+.button.large {
+  font-size: 0.9rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  padding: 0 2.75rem;
+}
+/*...............................................................................................*/
+/*Pagenumber*/
+.pagination {
+  display: inline-flex;
+}
+.pagination a,
+.pagination span {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  border: solid 2px;
+  display: inline-block;
+  letter-spacing: 0.075em;
+  line-height: 3rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin-left: -2px;
+  min-width: 3rem;
+  border-color: #eeeeee;
+}
+.pagination .next {
+  padding: 0 1.75rem;
+}
+.pagination .next:before {
+  display: inline-block;
+  line-height: 1;
+  line-height: inherit;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  float: right;
+  margin-left: 0.9375em;
+}
+.pagination a {
+  color: #212931 !important;
+}
+.pagination a.active {
+  background-color: #eeeeee;
+}
+
+#footer {
+  margin: 0;
+  display: flex;
+}
+
+#footer > section {
+  -moz-flex-basis: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-basis: 50%;
+  flex-basis: 50%;
+  -moz-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  padding: 4rem 4rem 2rem 4rem;
+  border-left: solid 2px #e2e2e2;
+}
+
+form {
+  margin: 0 0 2rem 0;
+}
+
+form > :last-child {
+  margin-bottom: 0;
+}
+
+form > .fields {
+  width: calc(100% + 3rem);
+  margin: -1.5rem 0 2rem -1.5rem;
+}
+
+form > .fields > .field {
+  padding: 1.5rem 0 0 1.5rem;
+  width: calc(100% - 1.5rem);
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  border: solid 2px;
+  border-color: #e2e2e2;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  height: 3rem;
+}
+
+textarea {
+  padding: 0.75rem 1rem;
+}
+
+input[type="submit"] {
+  font-size: 14.67px !important;
+  background-color: white !important;
+  color: #909498 !important;
+  text-transform: uppercase !important;
+  /*border-color: #909498 !important;*/
+  border-width: 0;
+  box-shadow: inset 0 0 0 2px #909498;
+}
+input[type="submit"]:hover {
+  cursor: pointer !important;
+}
+
+label {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.075em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem 0.75rem;
+  color: #717981;
+  text-align: left;
+}
+@media screen and (max-width: 980px) {
+  label {
+    font-size: 0.9rem;
+  }
+}
+
+#footer > section.split {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+}
+
+#footer > section.split > section {
+  padding: 3rem 4rem 1rem 4rem;
+  border-top: solid 2px #e2e2e2;
+}
+
+#footer > section.split > section:first-child {
+  padding: 5rem 4rem 1rem 4rem;
+  border-top: 0;
+}
+
+#footer > section.split > section:last-child {
+  padding: 3rem 4rem 3rem 4rem;
+}
