@@ -1,4 +1,3 @@
-
 var addButton = document.getElementById("addButton");
 var tasklist = document.getElementById("tasklist");
 var inputField = document.getElementById("inputField");
@@ -86,148 +85,15 @@ function opentab(tabName) {
   //$(atab).addClass('nav a.colored');
 }
 
-var xx = document.getElementById("task-head");
-var yy = document.getElementById("ctask-head");
+var tasktab = document.getElementById("task-head");
+var ctasktab = document.getElementById("ctask-head");
 
 function tcol() {
-  xx.classList.add('colored');
-  yy.classList.remove('colored');
+  tasktab.classList.add('colored');
+  ctasktab.classList.remove('colored');
 }
 
 function ctcol() {
-  yy.classList.add('colored');
-  xx.classList.remove('colored');
+  ctasktab.classList.add('colored');
+  tasktab.classList.remove('colored');
 }
-
-
-/*tasklist.addEventListener("click",function(event){
-  var curritem=event.target;
-  if (curritem.tagName==="li"){
-    var index=Array.from(curritem.parentElement.children).indexOf(curritem);
-    myCompletedTasks.push(curritem.innerText); //CHECK ONCE
-    myTasks.splice(index,1);
-    localStorage.setItem('todo-storage',JSON.stringify(myTasks));
-    localStorage.setItem('ctodo-storage',JSON.stringify(myCompletedTasks));
-    
-
-    //curritem.childNodes[0].toggleAttribute("checked");
-    //curritem.childNodes[1].classList.toggle("checked");
-  }
-})
-*/
-//Trigger Display
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-// Create close buttons
-// var alltasks = document.getElementsByTagName("li");
-// for (var i = 0; i < alltasks.length; i++) {
-//   var span = document.createElement("span");
-//   var txt = document.createTextNode("\u00D7");
-//   span.className = "close";
-//   span.appendChild(txt);
-//   alltasks[i].appendChild(span);
-// }
-
-//Add a new task
-
-addButton.addEventListener("click",function() {
-    //add a new task
-    var newitem=document.createElement("li");
-    newitem.classList.add("task")
-    tasklist.appendChild(newitem)
-    var newlabel=document.createElement("label");
-    newitem.appendChild(newlabel);
-    var newinput=document.createElement("input");
-    newinput.setAttribute("type","checkbox");
-    newlabel.appendChild(newinput);
-    var newtext=document.createElement("span");
-    newlabel.appendChild(newtext);
-    newtext.innerText=inputField.value;
-    var newcross = document.createElement("span");
-    var txt = document.createTextNode("\u00D7");
-    newcross.className = "close";
-    newcross.appendChild(txt);
-    newlabel.appendChild(newcross);
-    // var arr=JSON.parse(sessionStorage.getItem('tasks'));
-    // arr.push(newtext);
-    // sessionStorage.setItem("tasks",JSON.stringify(arr));
-    
-    //reset inputField
-    inputField.value="";
-
-});
-
-
-
-
-// Check an item off
-
-// tasklist.addEventListener("click",function(event){
-//   var curritem=event.target;
-//   if (curritem.tagName==="li"){
-//     curritem.childNodes[0].toggleAttribute("checked");
-//     //curritem.childNodes[1].classList.toggle("checked");
-//   }
-
-// })
-
-//
-//Tasks -toggle- Completed Tasks
-var ctasklist=document.getElementById("ctasklist");
-var taskHead=document.getElementsByTagName('nav')[0].childNodes[0];
-var ctaskHead=document.getElementsByTagName('nav')[0].childNodes[1];
-
-/*taskHead.addEventListener('click',function(){
-  ctasklist.style.display="none";
-  tasklist.style.display="block";
-  taskHead.classList.toggle('colored');
-  ctaskHead.classList.toggle('colored');
-})
-
-ctaskHead.addEventListener('click',function(){
-  tasklist.style.display="none";
-  ctasklist.style.display="block";
-  taskHead.classList.toggle('colored');
-  ctaskHead.classList.toggle('colored');
-})*/
-/* TRASH
-
-tasklist.addEventListener("click", function(event) {
-  if (event.target.classList.contains("task")) {
-    event.target.classList.toggle("checked");
-    event.target.classList.add("checked-task");
-    setTimeout(function(){
-        event.target.remove();
-    },500);
-    //ctasklist.appendChild(event.target);
-  }
-  
-});*/
-
-
-
-
-
-
-
-
